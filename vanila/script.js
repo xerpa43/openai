@@ -22,7 +22,7 @@ function textLoad(element, text) {
     if (index < text.length) {
       element.innerHTML += text.charAt(index);
       index++;
-    chatContainer.scrollTop =chatContainer.scrollHeight;
+//     chatContainer.scrollTop =chatContainer.scrollHeight;
 
     } else {
       clearInterval(Interval);
