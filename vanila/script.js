@@ -21,7 +21,7 @@ function textLoad(element, text) {
    let Interval = setInterval(() => {
     if (index < text.length) {
       element.innerHTML += text.charAt(index);
-    chatContainer.scrollTop =chatContainer.scrollHeight;
+     scroll()
       
       index++;
 
@@ -67,7 +67,7 @@ const handleSubmit = async (e) => {
 
   const unique = generateUniqeId();
   chatContainer.innerHTML += mark(true, "", unique);
-  chatContainer.scrollTop = chatContainer.scrollHeight + chatContainer.scrollHeight;
+    scroll()
 
 
   const message = document.getElementById(unique);
@@ -103,6 +103,10 @@ form.addEventListener("keyup", (e) => {
     handleSubmit(e);
   }
 });
+
+funtion scroll(){
+   chatContainer.scrollTop =chatContainer.scrollHeight;
+}
 
 
 
