@@ -73,7 +73,7 @@ const handleSubmit = async (e) => {
 
   
   loading(message);
-  const response = await fetch("http://localhost:7070", {
+  const response = await fetch("https://chat-m284.onrender.com/", {
     method: "POST",
     headers: {
       "Content-type": "application/json",
