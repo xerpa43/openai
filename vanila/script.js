@@ -21,7 +21,7 @@ function textLoad(element, text) {
    let Interval = setInterval(() => {
     if (index < text.length) {
       element.innerHTML += text.charAt(index);
-   chatContainer.scrollTop =chatContainer.scrollHeight;
+   chatContainer.scrollTop +=chatContainer.scrollHeight;
       
       
       index++;
