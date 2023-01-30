@@ -106,8 +106,7 @@ form.addEventListener("keyup", (e) => {
   }
 });
 
-funtion scroll(){
-}
+
 
 
 
