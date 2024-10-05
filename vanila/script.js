@@ -93,7 +93,7 @@ const handleSubmit = async (e) => {
     textLoad(message, parsedData);
   } else {
     const err = await response.text();
-    message.innerHTML = "OOPS THERE IS AN ERROR ";
+    message.innerHTML = " Hi, the OpenAPI key needs to be renewed for me to process your requests. ";
     alert(err);
   }
 };
